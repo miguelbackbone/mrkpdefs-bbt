@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*--------------------------------------------------------------------------------
+ * Project: Project,
+ * By: Backbone Technology Bogotá © 2017,
+ * Craftman: Devman
+ * -----------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+ * GENERAL
+ * -----------------------------------------------------------------------------*/
+body{ font-family: '', sans-serif; }
+body.noscroll{ overflow: hidden; }
+figure{ margin: 0; }
+img{ max-width: 100%; }
+a{ text-decoration: none; }
+
+.makeBg{ background-color: #eee; background-size: cover; background-position: 50% 50%; }
+.makeBg > img:first-child{ display: none; }
+.vid{ display: block; width: 100%; height: 0; padding-top: 56.25%; position: relative; background-color: #eee; }
+.vid iframe{ display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.ulReset{ padding: 0; margin: 0; list-style: none; }
+.container{ width: 100%; max-width: 960px; padding: 0 20px; margin: 0 auto; }
+.fullContainer{ width: 100%; padding: 0 20px; }
+.container-l{ width: 100%; max-width: 1200px; padding: 0 20px; margin: 0 auto; }
+.container-s{ width: 100%; max-width: 800px; padding: 0 20px; margin: 0 auto; }
+.flip{ float: right; }
+
+.title{ display: block; margin: 0; font-weight: 500; line-height: 1; text-transform: uppercase; color: #000; }
+.title.title-l{ font-size: 42px; }
+.title.title-m{ font-size: 36px; }
+.title.title-s{ font-size: 30px; }
+.text{ font-size: 16px; font-weight: 400; line-height: 1.3; }
+.text.text-l{ font-size: 24px; line-height: 1.4; }
+.text.text-m{ font-size: 20px; line-height: 1.4; }
+.text.text-s{ font-size: 14px; }
+.text ul:not(.ulReset){ display: block; margin: 30px 0; padding-left: 50px; list-style: none; }
+.text ul:not(.ulReset) li{ display: block; margin: 1em 0; padding-left: 20px; position: relative; }
+.text ul:not(.ulReset) li::before{ content: "•"; display: block; width: 15px; height: 1em; font-size: 1.3em; line-height: 1; text-align: left; position: absolute; top: 0; left: 0; }
+
+.btn{ display: inline-block; }
+
+.formHold{ margin-left: -15px; }
+.formHold .formCol{ vertical-align: bottom; padding: 0 0 20px 15px; position: relative; }
+.inputSkin{ position: relative; border: 0; border-bottom: 1px solid #000; }
+.inputSkin input{ display: block; width: 100%; height: 40px; padding: 0; border: 0; font-size: 14px; line-height: 40px; outline: 0; background: #fff; color: #000; }
+.inputSkin textarea{ display: block; width: 100%; height: auto; padding: 10px 0; border: 0; font-size: 14px; line-height: 1.3; resize: none; outline: 0; background: #fff; }
+.inputLabel{ display: block; font-size: 14px; line-height: 1; cursor: pointer; }
+.checkSkin{ display: block; width: 100%; position: relative; cursor: pointer; }
+.checkSkin input{ display: block; width: 1px; height: 1px; position: absolute; top: 0; left: 0; opacity: 0; visibility: hidden; }
+.checkSkin-label{ display: block; padding-left: 30px; font-size: 14px; position: relative; }
+.checkSkin-label::before{ content: "\f00c"; display: block; width: 16px; height: 16px; border: 1px solid #000; font-family: "FontAwesome"; font-size: 0; line-height: 16px; text-align: center; background: #fff; color: #000; position: absolute; top: 0; left: 0; }
+.checkSkin input:checked + .checkSkin-label::before{ font-size: 12px; background: #000; color: #fff; }
+.checkSkin-label a{ text-decoration: underline; color: inherit; }
+.selectSkin{ position: relative; border: 0; border-bottom: 1px solid #000; }
+.selectSkin select{ display: block; width: 100%; height: 40px; margin: 0; padding: 0; padding-right: 40px; border: 0; font-size: 14px; font-weight: 400; line-height: 40px; background: #fff; outline: 0; cursor: pointer; }
+.selectSkin option{ padding: 5px 0; font-size: 14px; }
+.selectSkin option:disabled{ background: #eee; color: #ccc; }
+.selectSkin::after{ position: absolute; top: 1px; right: 0; bottom: 1px; width: 38px; text-align: center; content:'\f107'; line-height: 38px; font-family: 'FontAwesome'; background: #fff; pointer-events: none; }
+.inputDateSkin input{ cursor: pointer; }
+.inputDateSkin::after{ position: absolute; top: 1px; right: 0; bottom: 1px; width: 38px; text-align: center; content:'\f073'; line-height: 38px; font-family: 'FontAwesome'; background: #fff; pointer-events: none; }
+
+.captchaHold{ display: block; width: 100%; overflow: hidden; }
+
+.ui-widget{ width: auto; min-width: 250px; margin-top: 5px; border: 1px solid #000; border-radius: 0; font-family: 'Raleway', sans-serif; background: #fff; color: #3d3d3d; }
+.ui-datepicker .ui-datepicker-header{ margin: 0; padding: 10px 0; border: 0; border-bottom: 1px solid #a7a7a7; border-radius: 0; font-size: 0; font-weight: 400; background: none; }
+.ui-datepicker .ui-datepicker-month{ display: inline-block; vertical-align: baseline; margin-right: 10px; padding-right: 10px; border-right: 2px solid #5a5a5a; font-size: 15px; font-weight: 700; line-height: 1; }
+.ui-datepicker .ui-datepicker-year{ display: inline-block; vertical-align: baseline; font-size: 15px; font-weight: 400; line-height: 1; }
+.ui-datepicker-calendar thead{ border-bottom: 1px solid #a7a7a7; }
+.ui-datepicker th{ padding: 10px 5px; font-size: 13px; }
+.ui-datepicker .ui-state-default{ display: block; width: 30px; height: 30px; margin: 0 auto; padding: 0; border: 0; border-radius: 2px; font-size: 14px; line-height: 30px; text-align: center; background: #fff; color: #3d3d3d; }
+.ui-datepicker .ui-state-default:hover{ background: #ccc; }
+.ui-datepicker-today .ui-state-default{ background: #eee; font-weight: 700; }
+.ui-datepicker .ui-state-disabled .ui-state-default{ background: none; }
+.ui-datepicker .ui-state-default.ui-state-active{ background: #000; color: #fff; font-weight: 700; }
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next{ width: 30px; height: 30px; margin: 0; padding: 0; border: 0; font-size: 0; line-height: 30px; text-align: center; background: #fff; top: 2px; cursor: pointer; }
+.ui-datepicker .ui-datepicker-prev::before,
+.ui-datepicker .ui-datepicker-next::before{ display: inline-block; font-family: 'FontAwesome'; font-size: 18px; color: #3d3d3d; }
+.ui-datepicker .ui-datepicker-prev::before{ content:'\f104'; }
+.ui-datepicker .ui-datepicker-next::before{ content:'\f105'; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span{ display: none; }
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev-hover{ left: 0; }
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next-hover{ right: 0; }
+
+
+/*--------------------------------------------------------------------------------
+ * HOME
+ * -----------------------------------------------------------------------------*/
+#home{}
+
+
+/*--------------------------------------------------------------------------------
+ * JUAMGRID MEDIA QUERIES
+ * -----------------------------------------------------------------------------*/
+/* ==== Special ChrarlyHoov-size ==== */
+@media only screen and (min-width: 1540px){}
+@media only screen and (min-width: 1260px){}
+@media only screen and (max-width: 1259px){
+	/*----------------------------------------------------------------------------
+	 * GENERAL
+	 * -------------------------------------------------------------------------*/
+	.title{}
+}
+@media only screen and (max-width: 1079px){}
+@media only screen and (max-width: 979px){}
+@media only screen and (max-width: 719px){}
+@media only screen and (max-width: 479px){}
+@media only screen and (max-width: 380px){}
